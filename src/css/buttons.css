@@ -1,0 +1,53 @@
+button {
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 0;
+}
+
+.btn-change-language {
+  padding: 0;
+  position: relative;
+}
+
+.btn-lg-text {
+  visibility: hidden;
+  width: 60px;
+  background-color: rgb(96, 177, 114);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn-change-language:hover .btn-lg-text {
+  visibility: visible;
+}
+
+/* fox-people btns start*/
+
+.btn-rel-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.btn-rel {
+  margin-right: 1rem;
+  padding: 0.3rem 1rem;
+  background-color: #14312A;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+}
+
+.btn-rel:hover {
+  background-color: rgb(204, 92, 92);
+}
+
+.btn-rel-open {
+  background-color: rgb(204, 92, 92);
+}
+
+/* fox-people btns end */

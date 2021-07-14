@@ -1,0 +1,43 @@
+{
+  "children": [
+    {"name": "farming",
+      "hex": "#CE2029",
+      "children": [
+   {
+    "name": "others",
+    "hex": "#12939d",
+    "children": [
+       {"name": "others", "hex": "#12939d", "value": 1000}
+    ]
+   },
+
+   {
+    "name": "Europe",
+    "hex": "#495f8f",
+    "children": [
+     {"name": "Finland", "hex": "#5c382f", "value": 2300000},
+     {"name": "Other EU countries", "hex": "#a0daa9", "value": 500000}
+    ]
+   },
+   {"name": "China", "hex": "rgb(163, 163, 149)", "value": 17300000}
+
+
+  ]
+  },
+
+  {"name": "wild",
+    "hex": "#CD7F32",
+    "children": [ 
+      {"name": "North America",
+        "hex": "#8f5649",
+        "children": [
+      {"name": "USA", "hex": "#12939A", "value": 2000000},
+      {"name": "Canada", "hex": "#0c2e26", "value": 1000000}
+        ]
+    },
+      {"name": "Russia", "hex": "#8f495f", "value": 1000000}
+
+    ]
+  }
+  ]
+ }

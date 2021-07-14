@@ -1,0 +1,93 @@
+.inner-wrapper {
+  position: relative;
+  overflow: scroll;
+  margin-bottom: 2rem;
+}
+
+.scroll-wrapper {
+  display: flex;
+  width: auto;
+  overflow-x: scroll;
+  margin-left: -1rem;
+  scroll-snap-type: x;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.how-help-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem 0.5rem;
+  width: 15rem;
+  height: 15rem;
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  background-color: #84aed8;
+  padding: 1rem;
+  border-radius: 5%;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.how-help-item:nth-child(3) {
+  background-color: rgb(163, 163, 149);
+}
+
+.how-help-item:nth-child(4) {
+  background-color: rgb(86, 73, 143);
+}
+
+.how-help-item:nth-child(2) {
+  background-color: rgb(96, 177, 114);
+}
+
+.how-help-item:nth-child(6) {
+  background-color: rgb(30, 85, 80);
+}
+
+.how-help-item:nth-child(8) {
+  background-color: rgb(204, 92, 92);
+}
+
+.how-help-title {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.how-help-region {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 0.6rem;
+}
+
+.how-help-item-about {
+  margin-top: 1rem;
+}
+
+.how-help-link {
+  color: white;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.how-help-link:hover {
+  color: grey;
+}
+
+@media (max-width: 600px) {
+  .scroll-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .how-help-item {
+    width: 100%;
+    padding: 2rem 3rem;
+    border-radius: 0;
+  }
+  .how-help-item-about {
+    max-width: 75%;
+  }
+}

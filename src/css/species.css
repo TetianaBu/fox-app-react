@@ -1,0 +1,147 @@
+.species-container {
+  font-weight: 400;
+  max-width: 900px;
+}
+
+.container-fluid-species {
+  background-color: #141c25;
+  color: white;
+}
+
+.container-fluid-species hr {
+  border: 0.5px solid rgb(163, 163, 149);
+}
+
+.species-item {
+  margin-right: 1rem;
+}
+
+.species-btn {
+  padding: 0;
+  margin: 0 0.25rem 0;
+  font-weight: bold;
+  background-color: #141c25;
+  ;
+  color: white;
+}
+
+.species-btn-open {
+  background-color: #14312A;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.species-item-text {
+  padding: 2rem 0.3rem;
+  height: 250px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 1rem;
+  height: 70vh;
+}
+
+.row {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.row-2 {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 45% 50%;
+  grid-column-gap: 3rem;
+  height: 60vh;
+  align-items: center;
+}
+
+.item-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.item-text-wrapper {
+  height: 330px;
+}
+
+.decoration-species {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  background-color: rgb(163, 163, 149);
+  transform: translate(-20px, calc(100% - 50px));
+  z-index: 2;
+  border-radius: 60%;
+  opacity: 0.9;
+}
+
+.species-img {
+  position: absolute;
+  z-index: 1;
+  transform: translate(16px, calc(-65% + 20px));
+}
+
+.species-link {
+  margin: 0.3rem 0;
+  text-transform: lowercase;
+  font-size: smaller;
+  color: white;
+}
+
+.species-link-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.species-link:hover {
+  background-color: rgb(96, 177, 114);
+  ;
+  padding: 0.2rem;
+}
+
+.inner-title-species {
+  text-transform: uppercase;
+  font-size: smaller;
+  padding-top: 2rem;
+  font-weight: bolder;
+}
+
+.inner-title-species, .species-item-text {
+  padding-left: 1rem;
+}
+
+.main-heading-species {}
+
+.subheading-species {}
+
+.item-text-full {}
+
+@media (max-width: 600px) {
+  .two-columns {
+    height: 100vh;
+  }
+  .row-2 {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 70vh;
+  }
+  .item-img-wrapper {
+    position: static;
+  }
+  .species-img {
+    position: static;
+    max-width: 50%;
+    transform: translate(0);
+    z-index: 1;
+  }
+  .decoration-species {
+    display: none;
+  }
+}

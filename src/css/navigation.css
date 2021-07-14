@@ -1,0 +1,36 @@
+.Navigation-container {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 0;
+  font-size: smaller;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.App-logo {
+  margin: 0.3rem 0 0;
+  padding: 0;
+  max-width: 50px;
+}
+
+.nav-bar-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  margin: 0.3rem 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.btn-change-language {}

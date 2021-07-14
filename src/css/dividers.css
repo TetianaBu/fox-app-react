@@ -1,0 +1,29 @@
+.container.centered {
+  justify-items: center;
+  height: 70vh;
+  color: white;
+}
+
+.divider-after-how-help {
+  background-color: #141c25;
+  height: 60vh;
+}
+
+.divider-intro-how-help {
+  background-color: #141c25;
+}
+
+.divider-intro-to-statistic {
+  background-color: #141c25;
+}
+
+.divider-heading {
+  max-width: 50%;
+  text-align: center;
+  line-height: 1.5;
+  align-self: end;
+}
+
+.divider-helper {
+  align-self: start;
+}

@@ -1,0 +1,120 @@
+.container-fluid-ban {
+	background-color: rgb(206, 141, 141);
+}
+
+.timeline-wrapper {
+	height: 400px;
+	overflow: scroll;
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.outer-wrapper {
+	position: relative;
+}
+
+.timeline-legend {
+	position: absolute;
+	margin: auto;
+	bottom: 2rem;
+}
+
+.timeline {
+	margin: 5rem 1rem auto 1rem;
+	height: 5px;
+	background-color: rgb(165, 163, 163);
+	width: 1400px;
+}
+
+.timeline-items {
+	margin-left: -6px;
+	margin-right: -10px;
+	margin-top: -12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.timeline-item {
+	position: relative;
+}
+
+.timeline-item::before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: rgb(145, 140, 140);
+	display: block;
+	border-radius: 100%;
+}
+
+.timeline-content {
+	position: absolute;
+	background-color: #ddd;
+	bottom: 35px;
+	width: 50px;
+	padding: 0;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 10px;
+	transform: rotate(-60deg);
+}
+
+.timeline-item:nth-of-type(2), .timeline-item:nth-of-type(3), .timeline-item:nth-of-type(4), .timeline-item:nth-of-type(6), .timeline-item:nth-of-type(8), .timeline-item:nth-of-type(9), .timeline-item:nth-of-type(11), .timeline-item:nth-of-type(13), .timeline-item:nth-of-type(17), .timeline-item:nth-of-type(21) {
+	visibility: hidden;
+}
+
+/*not 
+
+.timeline-territories::before {
+	content: '';
+	width: 2px;
+	height: 30px;
+	background-color: rgb(145, 140, 140);
+	display: block;
+	position: absolute;
+  bottom: 10px;
+  left: 3px
+}
+.farming-ban-wrapper {
+}
+.strict-regulation-wrapper {
+}
+used*/
+
+.timeline-territories {
+	position: absolute;
+	top: 30px;
+	padding: 0;
+	text-align: center;
+	font-size: 10px;
+	height: 100px;
+	color: white;
+}
+
+.farming-ban-item, .trade-ban-item, .strict-regulation-item {
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.trade-ban-item {
+	background-color: rgb(96, 177, 114);
+}
+
+.farming-ban-item {
+	background-color: #8a70aa;
+}
+
+.strict-regulation-item {
+	background-color: rgb(204, 92, 92);
+}
+
+.add-padding {
+	padding: 0.1px 20px;
+	margin-right: 0.5rem;
+}
+
+.timeline-legend p {
+	font-size: 10px;
+}

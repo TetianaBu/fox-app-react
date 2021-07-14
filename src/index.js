@@ -1,12 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './fonts/montserrat-v15-latin-regular.woff2';
+import './css/index.css';
+import './css/dividers.css';
+import './css/buttons.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 import reportWebVitals from './reportWebVitals';
+
+import Header from './Header-main';
+import Footer from './Footer';
+import FactsMain from './Facts-main';
+import HowHelp from './How-help-main';
+import SpeciesMain from './Species-main';
+import FoxAndPeople from './Fox-people-main'
+import MapMain from './Map-main';
+import FurBan from './Fur-ban-main';
+import DividerIntroToStatistic from './Divider-intro-to-statistic'
+import DividerIntroToHowHelp from './Divider-intro-to-how-help'
+import DividerAfterHowHelp from './Divider-after-how-help'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="container-content">
+      <Header />
+      <FactsMain />
+      <SpeciesMain />
+      <MapMain />
+      <DividerIntroToStatistic />
+      <FoxAndPeople />
+      <FurBan/>
+      <DividerIntroToHowHelp/>
+      <HowHelp/>
+      <DividerAfterHowHelp />
+      <Footer />
+      <footer className="author">
+        <p>all about foxes</p>
+      </footer>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

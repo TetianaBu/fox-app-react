@@ -1,0 +1,40 @@
+.footer-container-fluid {
+  background-color: #141c25;
+  color: white;
+}
+
+.contact-box {
+  display: flex;
+  margin: auto;
+}
+
+.contact, .recources {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.social {
+  display: flex;
+}
+
+.footer-headers {
+  margin-bottom: 1rem;
+}
+
+.author>p {
+  font-size: smaller;
+  text-align: center;
+}
+
+.social>a, .recources>a {
+  margin: 0;
+  font-size: smaller;
+  color: white;
+}
+
+.icon {
+  max-width: 15px;
+  max-height: 15px;
+  margin-right: 0.5rem;
+}

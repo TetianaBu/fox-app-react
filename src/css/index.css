@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-v15-latin-regular.woff2') format("woff2");
+}
+
+html {
+  --violett-blue: #303C6C;
+  --dark-green: #14312A;
+  --black: #141c25;
+  --light-grey: #fafafa;
+  --green: rgb(96, 177, 114);
+  --violette: rgb(86, 73, 143);
+  --violette-light: #8a70aa;
+  --olive: rgb(163, 163, 149);
+  --brown-green: rgb(30, 85, 80);
+  --orange: rgb(204, 92, 92);
+  --light-blue: #84aed8;
+  --box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h2, h3, h4, h6 {
+  margin-top: 0;
+  line-height: 1;
+  font-weight: 400;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline-color: var(--light-green);
+}
+
+.container-content {
+  display: grid;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  max-width: 900px;
+  margin: 2rem auto;
+  grid-column-gap: 1rem;
+}
+
+footer {
+  background-color: #141c25;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* sections common */
+
+.half-row {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-main-heading {
+  margin-bottom: 0;
+}
+
+.section-label {
+  font-size: .75rem;
+  letter-spacing: 1px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.section-subheading {}
+
+/* end sections common */
+
+.map-container {
+  height: 400px;
+  position: relative;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #ffffff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .half-row {
+    grid-template-columns: 100%;
+  }
+  .section-subheading {
+    max-width: 75%;
+  }
+  .container {
+    padding: auto 1rem;
+  }
+}

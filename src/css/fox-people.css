@@ -1,0 +1,78 @@
+.container-fluid-rel {
+  background-color: #fafafa;
+  color: black;
+}
+
+.rel-main-content-container {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.rel-link {
+  margin: 0.3rem auto;
+  font-size: smaller;
+}
+
+.rel-link-wrapper {}
+
+/* diagrams */
+
+.sunburst-wrapper {
+  display: grid;
+  grid-template-rows: 80% 10% 10%;
+  place-items: center;
+  row-gap: 0.5rem;
+}
+
+.legend-people-fox {
+  margin: auto 2rem auto 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.diagram-info, .path-name {
+  text-align: right;
+  margin-right: 2rem;
+  margin-left: auto;
+  font-size: 10px;
+  padding: 0.3rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  color: white;
+}
+
+.path-name {
+  background-color: rgb(204, 92, 92);
+}
+
+.diagram-info {
+  background-color: #14312A;
+}
+
+.rv-xy-plot__axis__tick__text {
+  font-size: 6px;
+}
+
+.legend-economy {
+  display: grid;
+  justify-items: end;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.expl-economy {
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  position: absolute;
+  margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .rel-main-content-container {
+    grid-template-columns: 1fr;
+  }
+}
