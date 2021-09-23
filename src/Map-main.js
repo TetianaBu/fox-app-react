@@ -7,21 +7,16 @@ function MapMain() {
       <div>
         <div className="half-row">
           <span className="section-label">Map</span>
-          <h2 className="section-main-heading">Navigate</h2>
+          <h2 className="section-main-heading">In progress</h2>
           <p className="section-subheading">
-            Choose something in legend try nice lele
+            Map and legend. Work in progress
           </p>
           <hr />
         </div>
       </div>
       <div className="map-legend-container">
         <div className="legend-container">
-          <p> legend containeer</p>
-          <p> legend containeer</p>
-          <p> legend containeer</p>
-          <p> legend containeer</p>
-          <p> legend containeer</p>
-          <p> legend containeer</p>
+          <p> legend container</p>
         </div>
         <div className="map-container">
           <Map />

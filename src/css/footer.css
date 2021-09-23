@@ -8,14 +8,10 @@
   margin: auto;
 }
 
-.contact, .recources {
+.social, .recources {
   display: flex;
   flex-direction: column;
   margin: 0 3rem;
-}
-
-.social {
-  display: flex;
 }
 
 .footer-headers {

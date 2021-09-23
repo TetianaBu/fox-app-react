@@ -1,7 +1,7 @@
 {
   "children": [
     {"name": "farming",
-      "hex": "#CE2029",
+      "hex": "#003247",
       "children": [
    {
     "name": "others",
@@ -13,29 +13,29 @@
 
    {
     "name": "Europe",
-    "hex": "#495f8f",
+    "hex": "#002f4d",
     "children": [
-     {"name": "Finland", "hex": "#5c382f", "value": 2300000},
-     {"name": "Other EU countries", "hex": "#a0daa9", "value": 500000}
+     {"name": "Finland", "hex": "#003e66", "value": 2300000},
+     {"name": "Other EU countries", "hex": "#005d99", "value": 500000}
     ]
    },
-   {"name": "China", "hex": "rgb(163, 163, 149)", "value": 17300000}
+   {"name": "China", "hex": "#003366", "value": 17300000}
 
 
   ]
   },
 
   {"name": "wild",
-    "hex": "#CD7F32",
+    "hex": "#140900",
     "children": [ 
       {"name": "North America",
-        "hex": "#8f5649",
+        "hex": "#472000",
         "children": [
-      {"name": "USA", "hex": "#12939A", "value": 2000000},
-      {"name": "Canada", "hex": "#0c2e26", "value": 1000000}
+      {"name": "USA", "hex": "#612c00", "value": 2000000},
+      {"name": "Canada", "hex": "#612400", "value": 1000000}
         ]
     },
-      {"name": "Russia", "hex": "#8f495f", "value": 1000000}
+      {"name": "Russia", "hex": "#481a00", "value": 1000000}
 
     ]
   }

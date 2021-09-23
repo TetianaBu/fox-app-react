@@ -62,9 +62,11 @@ function FactsCarousel() {
           }}
         >
           <div className="facts-img-container">
-            <img src={props.image} className="fact-img" alt="Foxes Facts" />
-            <img src={props.image2} className="fact-img" alt="Foxes Facts" />
-
+            <img
+              src={props.image}
+              className="fact-img img-1"
+              alt="Foxes Facts"
+            />
           </div>
 
           <div className="facts-text-container">
@@ -76,5 +78,6 @@ function FactsCarousel() {
     </div>
   );
 }
+//            <img src={props.image2} className="fact-img img-2" alt="Foxes Facts" />
 
 export default FactsCarousel;

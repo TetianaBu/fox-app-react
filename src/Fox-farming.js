@@ -1,4 +1,3 @@
-import padlock from './img/padlock.png'
 import React from 'react';
 import { LabelSeries, Sunburst } from 'react-vis';
 import D3FlareData from './data/farming-data.json';
@@ -44,65 +43,62 @@ export default class FoxFarming extends React.Component {
 
   render() {
     const { clicked, data, finalValue, pathValue } = this.state;
-    const padlockEl = <img src={padlock} className="icon" alt="Icon" /> 
     return (
       <div className="sunburst-wrapper">
-
         <div className="sunburst-inner-wrapper">
-        <Sunburst
-          animation
-          className="sunburst-farming"
-          hideRootNode
-          onValueMouseOver={(node) => {
-            if (clicked) {
-              return;
+          <Sunburst
+            animation
+            className="sunburst-farming"
+            hideRootNode
+            onValueMouseOver={(node) => {
+              if (clicked) {
+                return;
+              }
+              const path = getKeyPath(node).reverse();
+              const pathAsMap = path.reduce((res, row) => {
+                res[row] = true;
+                return res;
+              }, {});
+              this.setState({
+                finalValue: path[path.length - 1],
+                pathValue: path.join(' > '),
+                data: updateData(decoratedData, pathAsMap)
+              });
+            }}
+            onValueMouseOut={() =>
+              clicked
+                ? () => {}
+                : this.setState({
+                    pathValue: false,
+                    finalValue: false,
+                    data: updateData(decoratedData, false)
+                  })
             }
-            const path = getKeyPath(node).reverse();
-            const pathAsMap = path.reduce((res, row) => {
-              res[row] = true;
-              return res;
-            }, {});
-            this.setState({
-              finalValue: path[path.length - 1],
-              pathValue: path.join(' > '),
-              data: updateData(decoratedData, pathAsMap)
-            });
-          }}
-          onValueMouseOut={() =>
-            clicked
-              ? () => {}
-              : this.setState({
-                  pathValue: false,
-                  finalValue: false,
-                  data: updateData(decoratedData, false)
-                })
-          }
-          onValueClick={() => this.setState({ clicked: !clicked })}
-          style={{
-            stroke: '#ddd',
-            strokeOpacity: 0.3,
-            strokeWidth: '0.5'
-          }}
-          colorType="literal"
-          getSize={(d) => d.value}
-          getColor={(d) => d.hex}
-          data={data}
-          height={300}
-          width={350}
-        >
-          {finalValue && (
-            <LabelSeries
-              data={[{ x: 0, y: 0, label: finalValue, style: LABEL_STYLE }]}
-            />
-          )}
-        </Sunburst>
+            onValueClick={() => this.setState({ clicked: !clicked })}
+            style={{
+              stroke: '#ddd',
+              strokeOpacity: 0.3,
+              strokeWidth: '0.5'
+            }}
+            colorType="literal"
+            getSize={(d) => d.value}
+            getColor={(d) => d.hex}
+            data={data}
+            height={300}
+            width={350}
+          >
+            {finalValue && (
+              <LabelSeries
+                data={[{ x: 0, y: 0, label: finalValue, style: LABEL_STYLE }]}
+              />
+            )}
+          </Sunburst>
         </div>
         <div className="path-name">{pathValue}</div>
         <div className="diagram-info">
-            {clicked ? ' click to unlock selection' : `click to lock selection`}
+          {clicked ? ' click to unlock selection' : `click to lock selection`}
         </div>
       </div>
     );
   }
 }
-//export default FoxFarming;

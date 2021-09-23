@@ -1,6 +1,6 @@
 import './css/how-help.css';
 import Carousel1 from './How-help-carousel-1';
-import Carousel2 from './How-help-carousel-1';
+import Carousel2 from './How-help-carousel-2';
 
 function HowHelp() {
   return (

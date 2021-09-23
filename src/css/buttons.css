@@ -36,18 +36,21 @@ button {
 .btn-rel {
   margin-right: 1rem;
   padding: 0.3rem 1rem;
-  background-color: #14312A;
-  border: 1px solid white;
+  border: 1px solid var(--black);
   border-radius: 12px;
-  color: white;
+  color: var(--black);
+}
+
+.btn-rel:nth-of-type(2) {
 }
 
 .btn-rel:hover {
   background-color: rgb(204, 92, 92);
+  border: 1px solid var(--white);
+  color: white;
+  transform: scale(1.1);
 }
 
-.btn-rel-open {
-  background-color: rgb(204, 92, 92);
-}
+
 
 /* fox-people btns end */

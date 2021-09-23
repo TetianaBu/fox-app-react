@@ -26,18 +26,23 @@ function FoxAndPeople() {
   const [openTableIndex, setOpenTableIndex] = useState(0);
   const toggleTable = (newSelectedTableIndex) => {
     setOpenTableIndex(
-      newSelectedTableIndex === openTableIndex ? -1 : newSelectedTableIndex
+      newSelectedTableIndex === openTableIndex ? openTableIndex : newSelectedTableIndex
     );
   };
+  /*
+  const [clicked, setClicked] = useState('btn-rel-active');
+  const handleClick = () => {
+    clicked ? setClicked('') : setClicked('btn-rel-active btn-rel');
+  };
+*/
   const selectedElement = tablesData[openTableIndex]?.element;
-  console.log({ selectedElement });
   const legendText = tablesData[openTableIndex]?.legendText;
   const innerTitle = tablesData[openTableIndex]?.innerTitle;
   const link = tablesData[openTableIndex]?.link;
   return (
     <div className="container-fluid-rel" id="people-foxes-reletions">
       <section className="container">
-        <div>
+        <div> 
           <div className="half-row">
             <span className="section-label">People&Foxes</span>
             <h2 className="section-main-heading">Some cool diagrams</h2>
@@ -45,7 +50,7 @@ function FoxAndPeople() {
             <div className="btn-rel-container">
               {tablesData.map((table, listIndex) => (
                 <button
-                  className="btn-rel"
+                 className="btn-rel"
                   onClick={() => {
                     toggleTable(listIndex);
                   }}
@@ -64,8 +69,7 @@ function FoxAndPeople() {
             <p>{legendText}</p>
             <div className="rel-link-wrapper">
               <a href={link} className="rel-link">
-              <hr />
-
+                <hr />
                 learn more &#8594;
               </a>
             </div>

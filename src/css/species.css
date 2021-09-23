@@ -72,14 +72,17 @@
 }
 
 .decoration-species {
-  height: 6rem;
-  width: 6rem;
+  height: 10rem;
+  width: 1rem;
   position: absolute;
-  background-color: rgb(163, 163, 149);
+  left: 2rem;
+  border-left: 2px solid rgb(163, 163, 149);
+  border-right: 2px solid rgb(163, 163, 149);
+  background-color: rgb(163, 163, 149, 0);
   transform: translate(-20px, calc(100% - 50px));
   z-index: 2;
-  border-radius: 60%;
   opacity: 0.9;
+  transform: rotate(145deg);
 }
 
 .species-img {
@@ -116,12 +119,6 @@
 .inner-title-species, .species-item-text {
   padding-left: 1rem;
 }
-
-.main-heading-species {}
-
-.subheading-species {}
-
-.item-text-full {}
 
 @media (max-width: 600px) {
   .two-columns {

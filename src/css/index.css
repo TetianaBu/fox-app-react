@@ -43,6 +43,11 @@ hr {
   padding: 0;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 :focus {
   outline-color: var(--light-green);
 }
@@ -61,10 +66,15 @@ hr {
 
 footer {
   background-color: #141c25;
-  color: white;
+  color: grey;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  align-content: center;
+}
+
+.copyright {
+  font-size: 4px;
+  padding-bottom: 2rem;
 }
 
 img {
@@ -114,6 +124,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  } 
   .half-row {
     grid-template-columns: 100%;
   }

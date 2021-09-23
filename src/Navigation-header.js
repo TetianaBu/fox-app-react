@@ -1,15 +1,11 @@
 import logo from './img/logo.png';
-import globe from './img/globe.png'
 import './css/navigation.css';
 
 function Navigation() {
   return (
-    <nav className="Navigation-container">
+    <nav className="navigation-container">
       <div className="logo-container">
-        <a href="#">
-          <img src={logo} className="App-logo" alt="logo" />
-        </a>
-        <p>Fur-fur world</p>
+        <img src={logo} className="app-logo" alt="logo" />
       </div>
       <div className="nav-bar-menu">
         <a href="#acts">Facts</a>
@@ -23,6 +19,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-//        <button className="btn-change-language"><img src={globe} className="icon" alt="Icon" /><span className="btn-lg-text">Soon!</span></button>
-

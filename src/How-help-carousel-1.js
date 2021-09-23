@@ -51,7 +51,7 @@ const dataHowHelp1 = [
   }
 ];
 
-function CarouselMain() {
+function CarouselMain2() {
   const [focusedOrganisationIndex, setFocusedOrganisationIndex] = useState(-1);
   const toggleOrganisation = (newSelectedOrganisationIndex) => {
     setFocusedOrganisationIndex(
@@ -63,7 +63,7 @@ function CarouselMain() {
 
   return (
     <section className="inner-wrapper">
-      <div className="scroll-wrapper">
+      <div className="scroll-wrapper with-rotation">
       {dataHowHelp1.map((props, listIndex) => (
         <article className="how-help-item" 
         onFocus={() => {
@@ -80,4 +80,4 @@ function CarouselMain() {
     </section>
   );
 }
-export default CarouselMain;
+export default CarouselMain2;

@@ -7,9 +7,30 @@
 .scroll-wrapper {
   display: flex;
   width: auto;
-  overflow-x: scroll;
-  margin-left: -1rem;
+  overflow-x: visible;
   scroll-snap-type: x;
+
+}
+.with-rotation {
+  animation: rotation 40s linear 0s infinite;
+  animation-direction: reverse;
+
+ }
+.with-rotation-backwards {
+  animation: rotation 40s linear 0s infinite;
+}
+.with-rotation:hover, .with-rotation-backwards:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rotation {
+  from {
+    transform: translateX(100%);
+  }
+  
+  from {
+    transform: translateX(-200%);
+  }
 }
 
 .scroll-wrapper::-webkit-scrollbar {

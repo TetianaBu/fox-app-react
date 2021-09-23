@@ -35,7 +35,7 @@ ReactDOM.render(
       <DividerAfterHowHelp />
       <Footer />
       <footer className="author">
-        <p>all about foxes</p>
+        <p className="copyright"> <span>&#169;</span> all about foxes</p>
       </footer>
     </div>
   </React.StrictMode>,

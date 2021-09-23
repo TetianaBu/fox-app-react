@@ -1,5 +1,5 @@
 import './css/fur-ban.css';
-import Timeline from './Fur-ban-timeline'
+import Timeline from './Fur-ban-timeline';
 function FurBan() {
   return (
     <section className="container-fur-ban">

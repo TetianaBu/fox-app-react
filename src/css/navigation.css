@@ -1,4 +1,4 @@
-.Navigation-container {
+.navigation-container {
   display: grid;
   grid-template-columns: 30% 1fr;
   align-items: center;
@@ -12,12 +12,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 0;
 }
 
-.App-logo {
-  margin: 0.3rem 0 0;
+.app-logo {
+  margin: 0.3rem 0 0 0;
   padding: 0;
-  max-width: 50px;
+  max-width: 25px;
 }
 
 .nav-bar-menu {
@@ -25,7 +26,7 @@
   justify-content: flex-end;
 }
 
-a {
+.nav-bar-menu a {
   color: black;
   text-decoration: none;
   margin: 0.3rem 1rem;
@@ -33,4 +34,15 @@ a {
   flex-wrap: nowrap;
 }
 
-.btn-change-language {}
+@media (max-width: 768px) {
+  .navigation-container {
+    max-width: 768px;
+    grid-template-columns: 100%;
+  }
+  .logo-container {
+    display: none;
+  }
+  .nav-bar-menu {
+    justify-content: center;
+  }
+}
