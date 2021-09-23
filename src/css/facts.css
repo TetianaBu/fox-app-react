@@ -15,7 +15,6 @@
 
 .fact-img {
   padding: 2rem 2rem 2rem 0;
-  padding: 0 12px;
 }
 .img-1 {
 
@@ -54,6 +53,7 @@
     height: 100%;
     max-width: 768px;
     justify-items: center;
+    margin: auto;
   }
   .fact-element {
     height: 100vh;
@@ -62,6 +62,8 @@
     place-content: center;
     grid-gap: 2rem;
     grid-template-columns: 70%;
-    grid-template-rows: 30% 70%;
+  }
+  .fact-img {
+    max-height: 300px;
   }
 }

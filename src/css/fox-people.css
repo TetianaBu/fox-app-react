@@ -71,8 +71,10 @@
   margin-right: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .rel-main-content-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 120vh;
   }
 }

@@ -105,7 +105,6 @@
 
 .species-link:hover {
   background-color: rgb(96, 177, 114);
-  ;
   padding: 0.2rem;
 }
 
@@ -120,25 +119,45 @@
   padding-left: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 748px) {
   .two-columns {
-    height: 100vh;
+    height: 120vh;
+    padding: 2rem;
+  }
+  .row {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
   }
   .row-2 {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    height: 70vh;
+    height: 100vh;
+    place-items: center;
+    place-content: center;
   }
   .item-img-wrapper {
-    position: static;
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
   .species-img {
-    position: static;
+    position: relative;
     max-width: 50%;
-    transform: translate(0);
-    z-index: 1;
+    transform: none;
+    display: block;
   }
   .decoration-species {
     display: none;
+  }
+  
+  .item-text-wrapper hr {
+    display: none;
+    height: 100px;
+  }
+  .inner-title-species { 
+    padding: 0;
+  }
+  .species-item-text {
+    padding: 0;
   }
 }

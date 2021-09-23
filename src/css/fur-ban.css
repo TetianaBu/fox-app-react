@@ -118,3 +118,10 @@ used*/
 .timeline-legend p {
 	font-size: 10px;
 }
+
+
+@media (max-width: 768px) { 
+	.timeline-legend {
+		margin-left: 1rem;
+	}
+}
