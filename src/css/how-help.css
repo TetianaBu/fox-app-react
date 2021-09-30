@@ -107,8 +107,18 @@
     width: 100%;
     padding: 2rem 3rem;
     border-radius: 0;
+    margin: 0.3rem 2rem;
   }
   .how-help-item-about {
     max-width: 75%;
+  }
+  .with-rotation-backwards, .with-rotation {
+    animation: none;
+  }
+  .inner-wrapper {
+    margin-bottom: 0;
+  }
+  .how-help-link { 
+    align-self: flex-start;
   }
 }

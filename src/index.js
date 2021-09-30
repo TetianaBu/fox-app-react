@@ -22,7 +22,7 @@ import DividerAfterHowHelp from './Divider-after-how-help'
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="container-content">
+    <main className="container-content">
       <Header />
       <FactsMain />
       <SpeciesMain />
@@ -37,7 +37,8 @@ ReactDOM.render(
       <footer className="author">
         <p className="copyright"> <span>&#169;</span> all about foxes</p>
       </footer>
-    </div>
+    </main>
+    <aside className="message"><h1>please, use bigger screen</h1></aside>
   </React.StrictMode>,
   document.getElementById('root')
 );

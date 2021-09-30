@@ -30,6 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   line-height: 1.5;
+  min-width: 400px;
 }
 
 h2, h3, h4, h6 {
@@ -123,6 +124,17 @@ img {
   border-radius: 4px;
 }
 
+.message {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1000px) {
+
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 768px;
@@ -138,4 +150,16 @@ img {
   .container {
     padding: auto 1rem;
   }
+}
+@media (max-width: 600px) {
+  }
+
+@media (max-width: 480px) {
+.container-content {
+  display: none;
+}
+.message {
+  display: flex;
+
+}
 }

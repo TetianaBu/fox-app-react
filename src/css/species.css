@@ -152,12 +152,15 @@
   
   .item-text-wrapper hr {
     display: none;
-    height: 100px;
   }
   .inner-title-species { 
     padding: 0;
   }
   .species-item-text {
     padding: 0;
+    height: fit-content;
+  }
+  .species-link-wrapper {
+    justify-content: flex-start;
   }
 }
