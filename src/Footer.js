@@ -29,7 +29,7 @@ function Footer() {
           <div className="social">
             <p className="footer-headers">Contact</p>
             <a href="mailto:tetianataker@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/tetiana-buchok/">Linkedin</a>
             <a href="https://twitter.com/tetataker">Twitter</a>
           </div>
         </div>
