@@ -17,6 +17,7 @@ import './css/species.css';
 
 const speciesData = [
   {
+    id: 1,
     title: `Arctic fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -26,6 +27,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Arctic_fox'
   },
   {
+    id: 2,
     title: `Bengal fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -35,6 +37,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Bengal_fox'
   },
   {
+    id: 3,
     title: `Blanford's fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -45,6 +48,7 @@ const speciesData = [
   },
 
   {
+    id: 4,
     title: `Cape fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -54,6 +58,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Cape_fox'
   },
   {
+    id: 5,
     title: `Corsac fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -63,6 +68,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Corsac_fox'
   },
   {
+    id: 6,
     title: `Fennec fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -72,6 +78,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Fennec_fox'
   },
   {
+    id: 7,
     title: `Red fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -81,6 +88,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Red_fox'
   },
   {
+    id: 8,
     title: `Rüppell's fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -90,6 +98,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/R%C3%BCppell%27s_fox'
   },
   {
+    id: 9,
     title: `Tibetan fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -99,6 +108,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Tibetan_fox'
   },
   {
+    id: 10,
     title: `Kit fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -108,6 +118,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Kit_fox'
   },
   {
+    id: 11,
     title: `Pale fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -117,6 +128,7 @@ const speciesData = [
     link: 'https://en.wikipedia.org/wiki/Pale_fox'
   },
   {
+    id: 12,
     title: `Swift fox`,
     text1: `The most common and widespread species of fox is the rüppell fox
 (Vulpes vulpes) with about 47 recognized subspecies.`,
@@ -128,14 +140,6 @@ const speciesData = [
 ];
 
 function SpeciesCarousel() {
-  const [currentClassName, setCurrentClassName] = useState();
-  const addClassName = () => {
-    setCurrentClassName(
-      currentClassName === 'species-btn-open'
-        ? 'species-btn'
-        : 'species-btn-open'
-    );
-  };
   const [openSpeciesIndex, setOpenSpeciesIndex] = useState(0);
   const toggleSpecies = (newSelectedSpeciesIndex) => {
     setOpenSpeciesIndex(
@@ -154,7 +158,7 @@ function SpeciesCarousel() {
     <div className="two-columns">
       <div className="row">
         {speciesData.map((species, listIndex) => (
-          <article className="species-item">
+          <article className="species-item" key={species.id}>
             <div className="item-text-full">
               <div className="row-flex">
                 <button
@@ -184,18 +188,18 @@ function SpeciesCarousel() {
             <hr />
           </span>
           <p className="inner-title-species">{innerTitle}</p>
-            <div className="species-item-text">
-              <p>{text1}</p>
-              <p>{text2}</p>
-            </div>
+          <div className="species-item-text">
+            <p>{text1}</p>
+            <p>{text2}</p>
+          </div>
           <span>
             {' '}
             <hr />
           </span>
           <div className="species-link-wrapper">
-          <a href={link} className="species-link">
-            Read more on Wikipedia &#8594;
-          </a>
+            <a href={link} className="species-link">
+              Read more on Wikipedia &#8594;
+            </a>
           </div>
         </div>
       </div>

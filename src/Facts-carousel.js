@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 
 const factsData = [
   {
+    id: 1,
     title: 'Fact 1',
     text: 'Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies. The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world.',
     image: factImg1,
@@ -15,6 +16,7 @@ const factsData = [
     image3: factImg3
   },
   {
+    id: 2,
     title: 'Fact 2',
     text: 'Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies. The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world.',
     image: factImg2,
@@ -22,6 +24,7 @@ const factsData = [
     image3: factImg5
   },
   {
+    id: 3,
     title: 'Fact 3',
     text: 'Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies. The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world.',
     image: factImg3,
@@ -29,6 +32,7 @@ const factsData = [
     image3: factImg3
   },
   {
+    id: 4,
     title: 'Fact 4',
     text: 'Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies. The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world.',
     image: factImg4,
@@ -36,6 +40,7 @@ const factsData = [
     image3: factImg3
   },
   {
+    id: 5,
     title: 'Fact 5',
     text: 'Foxes live on every continent except Antarctica. The most common and widespread species of fox is the red fox (Vulpes vulpes) with about 47 recognized subspecies. The global distribution of foxes, together with their widespread reputation for cunning, has contributed to their prominence in popular culture and folklore in many societies around the world.',
     image: factImg5,
@@ -56,6 +61,7 @@ function FactsCarousel() {
     <div className="facts-container">
       {factsData.map((props, listIndex) => (
         <section
+          key={props.id}
           className="fact-element"
           onFocus={() => {
             toggleFact(listIndex);
