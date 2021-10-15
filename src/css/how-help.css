@@ -11,11 +11,13 @@
   scroll-snap-type: x;
 
 }
+/*
 .with-rotation {
-  animation: rotation 40s linear 0s infinite;
+  animation: rotation 100s linear infinite;
   animation-direction: reverse;
-
  }
+   animation: rotation 40s linear 0s infinite;
+
 .with-rotation-backwards {
   animation: rotation 40s linear 0s infinite;
 }
@@ -32,6 +34,7 @@
     transform: translateX(-200%);
   }
 }
+ */
 
 .scroll-wrapper::-webkit-scrollbar {
   display: none;
@@ -51,6 +54,7 @@
   border-radius: 5%;
   font-size: 0.75rem;
   color: white;
+  transition: opacity 0.2s ease;
 }
 
 .how-help-item:nth-child(3) {

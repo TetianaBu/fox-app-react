@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Marquee from 'react-fast-marquee';
 
 const dataHowHelp1 = [
   {
@@ -71,20 +72,21 @@ function CarouselMain1() {
 
   return (
     <section className="inner-wrapper">
-      <div className="scroll-wrapper with-rotation-backwards">
-      {dataHowHelp1.map((props, listIndex) => (
-        <article className="how-help-item" key={props.id}
-        onFocus={() => {
+      <Marquee gradient={false} pauseOnHover={true} direction={"right"} className="scroll-wrapper with-rotation-backwards">
+      {dataHowHelp1.map((items, listIndex) => (
+        <article className="how-help-item" key={items.id}
+        onClick={() => {
           toggleOrganisation(listIndex);
+          console.log(listIndex)
         }}
         >
-          <h3 className="how-help-title">{props.organisation}</h3>
-          <span className="how-help-region">{props.region}</span>
-          <p className="how-help-item-about">{props.about}</p>
-          <a href={props.link} className="how-help-link">&#x2192;</a>
+          <h3 className="how-help-title">{items.organisation}</h3>
+          <span className="how-help-region">{items.region}</span>
+          <p className="how-help-item-about">{items.about}</p>
+          <a href={items.link} className="how-help-link">&#x2192;</a>
         </article>
       ))}
-      </div>
+      </Marquee>
     </section>
   );
 }
